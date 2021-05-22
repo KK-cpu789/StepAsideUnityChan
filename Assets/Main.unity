@@ -1271,6 +1271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1061220957}
   - component: {fileID: 1061220956}
+  - component: {fileID: 1061220958}
   m_Layer: 0
   m_Name: ItemGenerator
   m_TagString: Untagged
@@ -1296,7 +1297,13 @@ MonoBehaviour:
     type: 3}
   conePrefab: {fileID: 4798303449053919570, guid: e94e9fccd04e6484aac90b441aa92c54,
     type: 3}
+  posRange: 3.4
+  unitychan: {fileID: 0}
+  difference: 0
+  startPos: 0
+  goalPos: 0
   timeOut: 3
+  timeElapsed: 1
 --- !u!4 &1061220957
 Transform:
   m_ObjectHideFlags: 0
@@ -1311,6 +1318,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061220958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061220955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5141be359b5c6f04c8fc2d6083434584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 1416961629322301337, guid: 741d0fbc284233c4aa4554105dfd6a23,
+    type: 3}
+  coinPrefab: {fileID: 9014081190094604802, guid: 0ffc766eb9e3a1a45a42d8ad5618d365,
+    type: 3}
+  conePrefab: {fileID: 4798303449053919570, guid: e94e9fccd04e6484aac90b441aa92c54,
+    type: 3}
 --- !u!1 &1154761975 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100326, guid: 8f0565f23a2b58541a475bd3c1393052,
