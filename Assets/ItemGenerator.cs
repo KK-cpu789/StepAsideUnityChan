@@ -12,7 +12,7 @@ public class ItemGenerator : MonoBehaviour
     private int spawnNum = 0;
     private int spawnInterbal = 15;
     private int goalPos = 360;
-    private int spawnDistance = 80;
+    private int spawnDistance = 50;
     //アイテムを出すx方向の範囲
     private float posRange = 3.4f;
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class ItemGenerator : MonoBehaviour
     {
         if(spawnNum * spawnInterbal < this.unitychan.transform.position.z)
         {
-            int spawnPositionZ = spawnNum * spawnInterbal + spawnDistance;
+            int spawnPositionZ = (int)this.unitychan.transform.position.z + spawnDistance;
             if (spawnPositionZ < goalPos)
             {
                 //どのアイテムを出すのかをランダムに設定
